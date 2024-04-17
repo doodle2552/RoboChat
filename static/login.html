@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RoboChatLogin</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="header">
+        <h1>VDHBAR chat Login</h1>
+       
+      </header>
+      <form class="register-form" id="login-form">
+        <div class="register-form__container">
+          <label for="login" class="register-form__label">Логін</label>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            class="register-form__input"
+            placeholder="Логін"
+          />
+
+          <label for="password" class="register-form__label">Пароль</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            class="register-form__input"
+            placeholder="Пароль"
+          />
+
+          <button type="submit" class="register-form__button">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script
+    src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+    integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+    crossorigin="anonymous"
+  ></script>
+  <script src="auth.js"></script>
+
+</html>
