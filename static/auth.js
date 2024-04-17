@@ -1,5 +1,7 @@
 const registerForm = document.getElementById('register-form');
 const loginForm = document.getElementById('login-form');
+const loginBtn = document.getElementById('loginBtn');
+const regBtn = document.getElementById('regBtn');
 
 
 registerForm?.addEventListener('submit', (event) => {
@@ -40,3 +42,9 @@ loginForm?.addEventListener('submit', (event) => {
     }
 
 });
+
+
+loginBtn.addEventListener('click', (e)=> {
+    location.assign('/login');
+});
+
